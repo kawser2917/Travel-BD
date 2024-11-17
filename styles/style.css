@@ -1,49 +1,200 @@
 /* Google Font Links */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /* Shared Style */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Mulish", sans-serif;
 }
-:root{
-    --primary-color:#131318;
+
+:root {
+    --primary-color: #131318;
     --secondary-color: rgba(19, 19, 24, 0.70);
     --btn-color: #FF5400;
 }
+main{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 16px;
+    color: #fff;
+}
+
+.section-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.section-description {
+    color: rgba(19, 19, 24, 0.70);
+    margin-top: 1.5rem;
+}
 
 /* Header Section Style */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 130px;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.9rem;
 }
-.nav-title{
+
+.nav-title {
     font-size: 2.3rem;
     font-weight: 700;
 }
-.hero-text{
+
+.hero-text {
     color: var(--primary-color);
 }
-.travel-text{
+
+.travel-text {
     color: var(--btn-color);
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 2.8rem;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: #424247;
 }
-.home{
+
+.home {
     color: var(--btn-color);
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Banner Section Design */
+.banner {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 16px;
+    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-content {
+    padding: 106px 185px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+
+.banner-title {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-description {
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 46px;
+}
+
+.banner-content form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+}
+
+.banner form input {
+    padding: 16px;
+    border-radius: 8px;
+    border: 0;
+}
+
+/* Popular tour  */
+.popular-tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.popular-tour-content ul{
+    margin-left: 20px;
+}
+.popular-tour-content button{
+    margin-top: 2rem;
+}
+
+
+/* Small Device */
+@media screen and (max-width:576px) {
+
+    /* Nav section */
+    nav {
+        padding: 20px;
+    }
+
+    .nav-title {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        max-width: 50%;
+    }
+
+    .hamburger {
+        display: initial;
+        font-size: 1.6rem;
+        margin-right: 1rem;
+    }
+
+    nav ul>li {
+        display: none;
+    }
+
+    /* Banner section */
+    .banner {
+        width: 90%;
+    }
+
+    .banner-content {
+        padding: 20px;
+    }
+
+    .banner-title {
+        font-size: 1.3rem;
+    }
+
+    .banner-content form,
+    .popular-tour {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .banner-content form input {
+        width: 80%;
+    }
+    .popular-tour{
+        padding: 20px;
+    }
+    .popular-tour img{
+        width: 100%;
+    }
+ 
+
 }
