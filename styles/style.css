@@ -421,7 +421,8 @@ nav ul li a {
 .newsletter-img {
     position: relative;
 }
-.newsletter-img img{
+
+.newsletter-img img {
     max-width: 672px;
     height: 422px;
 }
@@ -439,6 +440,46 @@ nav ul li a {
     left: 72%;
 }
 
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+
+.footer-content {
+    padding: 110px 330px;
+}
+
+.footer-description {
+    margin-top: 15px;
+    color: #5A5A5D;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons i {
+    margin-right: 16px;
+    margin-bottom: 40px;
+}
+
+.copyright-claim {
+    color: #131318;
+    font-family: Inter;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+
 
 /* Small Device */
 @media screen and (max-width:576px) {
@@ -450,7 +491,8 @@ nav ul li a {
     .deals-content,
     .perfect-place-container,
     .popular-tour,
-    .newsletter {
+    .newsletter,
+    .footer-content {
         padding: 20px;
     }
 
@@ -534,7 +576,8 @@ nav ul li a {
     .deals-container-2 .deals-content {
         margin: 0 auto;
     }
-    .newsletter-img img{
+
+    .newsletter-img img {
         width: 100%;
     }
 
